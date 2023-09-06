@@ -1,0 +1,15 @@
+#!/usr/bin/python3
+for i in range(0, 16):
+    if i < 10:
+        print(f"{i} = 0x{i}")
+    else:
+        m = chr(i + 87)
+        print(f"{i} = 0x{m}")
+for i in range(16, 99):
+    n = int(i / 16)
+    l = i % 16
+    if l >= 10 and l <= 15:
+        j = chr(l + 87)
+        print(f"{i} = 0x{n}{j}")
+    else:
+        print(f"{i} = 0x{n}{l}")
