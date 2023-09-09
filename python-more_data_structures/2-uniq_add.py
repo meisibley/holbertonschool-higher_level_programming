@@ -11,4 +11,4 @@ def uniq_add(my_list=[]):
         result -= uniq
         return result
     else:
-        return 0
+        return None
