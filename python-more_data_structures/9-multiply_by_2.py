@@ -4,4 +4,6 @@ def multiply_by_2(a_dictionary):
         b_dictionary = {}
         for x, y in a_dictionary.items():
             b_dictionary.update({x: y * 2})
-    return b_dictionary
+        return b_dictionary
+    else:
+        return a_dictionary
