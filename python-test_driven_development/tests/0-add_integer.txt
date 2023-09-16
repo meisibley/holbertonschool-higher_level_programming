@@ -47,3 +47,15 @@ Only argument is ``None``, it alse raise exception TypeError message.
 	>>> add_integer(None)
 	Traceback (most recent call last):
 	TypeError: a must be an integer
+
+OverflowError: cannot convert float infinity to integer
+
+	>>> add_integer(float('inf'), float('inf'))
+	Traceback (most recent call last):
+	OverflowError: cannot convert float infinity to integer
+
+ValueError: cannot convert float NaN to integer
+
+	>>> add_integer(float('NaN'), float('NaN'))
+	Traceback (most recent call last):
+	ValueError: cannot convert float NaN to integer
