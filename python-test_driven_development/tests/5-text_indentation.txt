@@ -6,6 +6,8 @@ from module 5-text_indentation import function text_indentation:
 text must be a string:
 
 >>> text_indentation("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quonam modo? Utrum igitur tibi litteram videor an totas paginas commovere? Non autem hoc: igitur ne illud quidem.")
+<BLANKLINE>
+<BLANKLINE>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 <BLANKLINE>
 Quonam modo?
