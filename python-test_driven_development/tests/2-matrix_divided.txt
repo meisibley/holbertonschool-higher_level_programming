@@ -63,14 +63,14 @@ divisor div can't be equal to 0:
 
 when div is float('inf') or float('nan'):
 
-	>>> matrix_divided([[1, 2, 3], [4, 5, 6]], float('inf'))
-	[[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]	
+	>>> matrix_divided([[3, 6, 9], [2, 4, 8]], float('inf'))
+	[[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
 
 	>>> matrix_divided([[1, 2, 3], [4, 5, 6]], float('nan'))
 	[[nan, nan, nan], [nan, nan, nan]]
 
 	>>> matrix_divided([[1, 2, 3], [4, float('inf'), 6]], 2)
-	[[0.5, 1.0, 1.5], [2, inf, 3.0]]
+	[[0.5, 1.0, 1.5], [2.0, inf, 3.0]]
 
 	>>> matrix_divided([[1, 2, 3], [4, float('inf'), 6]], float('inf'))
 	[[0.0, 0.0, 0.0], [0.0, nan, 0.0]]
