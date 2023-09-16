@@ -23,5 +23,5 @@ def matrix_divided(matrix, div):
         raise TypeError(err3)
     if div == 0:
         raise ZeroDivisionError(err4)
-    new_matrix = [list(map(lambda k: round(k / div, 2), l)) for l in matrix]
-    return new_matrix
+    newmatrix = [list(map(lambda cc: round(cc / div, 2), rc)) for rc in matrix]
+    return newmatrix
