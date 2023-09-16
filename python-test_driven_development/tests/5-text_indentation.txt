@@ -15,7 +15,6 @@ Utrum igitur tibi litteram videor an totas paginas commovere?
 Non autem hoc:
 <BLANKLINE>
 igitur ne illud quidem.
-<BLANKLINE>
 
 >>> text_indentation(23)
 Traceback (most recent call last):

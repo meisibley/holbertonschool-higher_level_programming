@@ -8,13 +8,13 @@ def text_indentation(text):
     if not isinstance(text, str):
         raise TypeError("text must be a string")
     else:
-        ntxt = text
+        ntx = text
         for i in range(len(text)):
-            ntxt = ntxt.replace(". ", ".", 1)
-            ntxt = ntxt.replace("? ", "?", 1)
-            ntxt = ntxt.replace(": ", ":", 1)
-        for j in range(len(ntxt)):
-            if ntxt[j - 1] != "." and ntxt[j - 1] != "?" and ntxt[j - 1] != ":":
-                print("{}".format(ntxt[j]), end="")
+            ntx = ntx.replace(". ", ".", 1)
+            ntx = ntx.replace("? ", "?", 1)
+            ntx = ntx.replace(": ", ":", 1)
+        for j in range(len(ntx)):
+            if ntx[j - 1] != "." and ntx[j - 1] != "?" and ntx[j - 1] != ":":
+                print("{}".format(ntx[j]), end="")
             else:
-                print("\n\n{}".format(ntxt[j]), end="")
+                print("\n\n{}".format(ntx[j]), end="")
