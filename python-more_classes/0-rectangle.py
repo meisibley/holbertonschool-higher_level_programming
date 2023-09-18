@@ -2,5 +2,8 @@
 """an empty class Rectangle"""
 
 
-class Rectangle():
-    pass
+class Rectangle:
+    "class Rectangle"""
+
+    def __init__(self):
+        {}
