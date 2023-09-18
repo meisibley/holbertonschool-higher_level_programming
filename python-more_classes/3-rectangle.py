@@ -55,14 +55,10 @@ class Rectangle:
     def __str__(self):
         """use given chars to make a rectangle"""
         if self.__width == 0 or self.__height == 0:
-            return
+            return ""
         else:
             rect_matrix = ""
             for w in range(self.__height - 1):
                 rect_matrix += "#" * self.__width + "\n"
             rect_matrix += "#" * self.__width
         return rect_matrix
-
-    def __print__(self):
-        """print any instance of the rectangle"""
-        print(self)
