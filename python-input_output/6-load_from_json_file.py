@@ -3,7 +3,7 @@
 
 
 def load_from_json_file(filename):
-    """convert from JSON to Python file"""
+    """from JSON to Python file"""
 
     import json
     with open(filename, encoding="utf-8") as p_file:
