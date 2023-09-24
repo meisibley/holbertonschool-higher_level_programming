@@ -6,7 +6,6 @@ import sys
 import json
 save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
 load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
-
 p_list = []
 for i in range(1, len(sys.argv)):
     p_list.append(str(sys.argv[i]))
