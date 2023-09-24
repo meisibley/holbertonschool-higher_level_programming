@@ -27,4 +27,3 @@ class Student:
         """replaces all attrs of the Student instance"""
         for i in json:
             setattr(self, i, json[i])
-
