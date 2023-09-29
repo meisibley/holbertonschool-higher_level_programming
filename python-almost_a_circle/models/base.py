@@ -3,9 +3,10 @@
 
 
 class Base:
-    """class Base"""
+    """class Base for unittest"""
 
     __nb_objects = 0
+
     def __init__(self, id=None):
         """init of base class"""
 
