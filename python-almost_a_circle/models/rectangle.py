@@ -32,16 +32,16 @@ class Rectangle(Base):
         """width getter"""
         return self.__width
 
-    @property
-    def height(self):
-        """height getter"""
-        return self.__height
-
     @width.setter
     def width(self, value):
         """width setter"""
         self.integer_validator("width", value)
         self.__width = value
+
+    @property
+    def height(self):
+        """height getter"""
+        return self.__height
 
     @height.setter
     def height(self, value):
@@ -54,16 +54,16 @@ class Rectangle(Base):
         """x getter"""
         return self.__x
 
-    @property
-    def y(self):
-        """y getter"""
-        return self.__y
-
     @x.setter
     def x(self, value):
         """x setter"""
         self.integer_validator("x", value)
         self.__x = value
+
+    @property
+    def y(self):
+        """y getter"""
+        return self.__y
 
     @y.setter
     def y(self, value):
