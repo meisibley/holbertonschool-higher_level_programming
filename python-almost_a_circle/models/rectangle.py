@@ -93,3 +93,16 @@ class Rectangle(Base):
         rect2 = "({}) {}/{}".format(self.id, self.__x, self.__y)
         rect3 = " - {}/{}".format(self.__width, self.__height)
         return rect1 + rect2 + rect3
+
+    def update(self, *args):
+        """update attributes"""
+        if len(args) > 0:
+            self.id = args[0]
+        if len(args) > 1:
+            self.__width = args[1]
+        if len(args) > 2:
+            self.__height = args[2]
+        if len(args) > 3:
+            self.__x = args[3]
+        if len(args) > 4:
+            self.__y = args[4]
