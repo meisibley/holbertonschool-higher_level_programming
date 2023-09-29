@@ -20,11 +20,11 @@ class Rectangle(Base):
         """attribute integer validate"""
         if type(value) is not int:
             raise TypeError("{} must be an integer".format(attri))
-        if attri == "width" and value <= 0:
+        if (attri == "width" and value <= 0):
             raise ValueError("{} must be > 0".format(attri))
-        if attri == "height" and value <= 0:
+        if (attri == "height" and value <= 0):
             raise ValueError("{} must be > 0".format(attri))
-        if (attri == "x" and value < 0) or (attri == "y" and value < 0):
+        if ((attri == "x" and value < 0) or (attri == "y" and value < 0)):
             raise ValueError("{} must be >= 0".format(attri))
 
     @property
