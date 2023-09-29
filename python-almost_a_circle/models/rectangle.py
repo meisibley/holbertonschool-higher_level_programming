@@ -15,6 +15,17 @@ class Rectangle(Base):
         self.y = y
         super().__init__(id)
 
+    def integer_validator(self, attribut, value):
+        """attribute integer validate"""
+        if type(value) is not int:
+            raise TypeError("{} must be an integer".format(attribut))
+        if attribut == "width" and value <= 0:
+            raise ValueError("{} must be > 0".format(attribut))
+        if attribut == "height" and value <= 0:
+            raise ValueError("{} must be > 0".format(attribut))
+        if (attribut == "x" and value < 0) or (attribut == "y" and value < 0):
+            raise ValueError("{} must be >= 0".format(attribut))
+
     @property
     def width(self):
         """width getter"""
