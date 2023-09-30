@@ -57,8 +57,9 @@ class Base:
     @classmethod
     def load_from_file(cls):
         """return a list of instances"""
+        from os import path
         jfile = cls.__name__ + ".json"
-        if not jfile:
+        if path.exists(jfile) is False:
             return []
         with open(jfile, "r") as jf:
             jstring = jf.read()
