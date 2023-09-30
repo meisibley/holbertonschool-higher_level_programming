@@ -53,3 +53,18 @@ class Base:
             dummy = cls(1)
         dummy.update(**dictionary)
         return dummy
+
+    @classmethod
+    def load_from_file(cls):
+        """return a list of instances"""
+        jfile = cls.__name__ + ".json"
+        if not jfile:
+            return []
+        with open(jfile, "r") as jf:
+            jstring = jf.read()
+            pstring = cls.from_json_string(jstring)
+        if cls:
+            plist = []
+            for ele in pstring:
+                plist.append(cls.create(**ele))
+        return plist
