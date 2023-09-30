@@ -36,4 +36,3 @@ class Base:
                 for ele in list_objs:
                     f_list.append(cls.to_dictionary(ele))
             j_file.write(Base.to_json_string(f_list))
-                
