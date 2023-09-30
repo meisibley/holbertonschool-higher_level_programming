@@ -22,7 +22,6 @@ class Base:
     @staticmethod
     def to_json_string(list_dictionaries):
         """static method convert list to json representation"""
-
         if list_dictionaries is None or len(list_dictionaries) == 0:
             return "[]"
         j_str = json.dumps(list_dictionaries)
@@ -31,7 +30,6 @@ class Base:
     @classmethod
     def save_to_file(cls, list_objs):
         """class method convert a JSON str to a file"""
-
         with open(cls.__name__ + ".json", mode="w") as j_file:
             f_list = []
             if list_objs:
