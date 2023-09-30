@@ -30,7 +30,7 @@ class Base:
     @classmethod
     def save_to_file(cls, list_objs):
         """class method convert a JSON str to a file"""
-        with open(cls.__name__ + ".json", "w") as j_file:
+        with open(cls.__name__ + ".json", mode="w") as j_file:
             j_list = []
             if list_objs is not None:
                 for element in list_objs:
