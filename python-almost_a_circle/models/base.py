@@ -36,3 +36,10 @@ class Base:
                 for ele in list_objs:
                     f_list.append(cls.to_dictionary(ele))
             j_file.write(Base.to_json_string(f_list))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """static method convert a json string to a list"""
+        if json_string is None or len(json_string) == 0:
+            return []
+        return json.loads(json_string)
