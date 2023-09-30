@@ -94,7 +94,7 @@ class Rectangle(Base):
         rect3 = " - {}/{}".format(self.__width, self.__height)
         return rect1 + rect2 + rect3
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """update attributes"""
         if len(args) > 0:
             self.id = args[0]
@@ -106,3 +106,6 @@ class Rectangle(Base):
             self.__x = args[3]
         if len(args) > 4:
             self.__y = args[4]
+        if len(args) == 0:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
