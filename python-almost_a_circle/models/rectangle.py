@@ -111,10 +111,11 @@ class Rectangle(Base):
                 setattr(self, key, value)
 
     def to_dictionary(self):
-        r_dict = {}
-        r_dict["id"] = self.id
-        r_dict["width"] = self.width
-        r_dict["height"] = self.height
-        r_dict["x"] = self.x
-        r_dict["y"] = self.y
-        return r_dict
+        rect_dict = {
+                "id": self.id,
+                "width": self.width,
+                "height": self.height,
+                "x": self.x,
+                "y": self.y
+                }
+        return rect_dict
