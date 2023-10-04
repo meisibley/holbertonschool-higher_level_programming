@@ -27,15 +27,14 @@ class testBase__init__(unittest.TestCase):
         self.assertEqual(base_obj2.id, 2)
 
     def test_id_given_value(self):
-        base_obj3 = Base(24)
-        self.assertEqual(base_objs.id, 24)
+        self.assertEqual(24, Base(24).id)
 
     def test_id_seq(self):
         base_obj4 = Base()
         base_obj5 = Base()
         base_obj6 = Base()
-        self.assertEqual(base_obj4, base_obj5 - 1)
-        self.assertEqual(base_obj4, base_obj6 - 2)
+        self.assertEqual(base_obj4.id, base_obj5.id - 1)
+        self.assertEqual(base_obj4.id, base_obj6.id - 2)
 
 
 class testBase_to_json_string(unittest.TestCase):
@@ -43,11 +42,11 @@ class testBase_to_json_string(unittest.TestCase):
 
     def test_to_json_string_rectangle_type(self):
         rect = Rectangle(3, 7, 5, 2, 2)
-        self.assertEqual(str, type(Base.to_json_string([rect.to_dictionary{}])))
+        self.assertEqual(str, type(Base.to_json_string([rect.to_dictionary()])))
 
     def test_to_json_string_square_type(self):
         sq = Square(6, 5, 2, 2)
-        self.assertEqual(str, type(Base.to_json_string([sq.to_dictionary{}])))
+        self.assertEqual(str, type(Base.to_json_string([sq.to_dictionary()])))
 
     def test_to_json_string_empty_list(self):
         self.assertEqual("[]", Base.to_json_string([]))
