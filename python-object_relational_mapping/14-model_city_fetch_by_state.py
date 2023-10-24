@@ -18,3 +18,4 @@ if __name__ == "__main__":
             filter(City.state_id == State.id).all()
     for city, state in city_session:
         print("{}: ({}) {}".format(state.name, city.id, city.name))
+    session.close()
