@@ -15,6 +15,7 @@ from model_state import Base, State
 
 class City(Base):
     """inherit from Base, City is an ORM class, links to table cities"""
+
     __tablename__ = "cities"
     id = Column(Integer, primary_key=True, nullable=False,
                 autoincrement=True, unique=True)
