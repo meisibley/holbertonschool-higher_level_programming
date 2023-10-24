@@ -9,12 +9,8 @@ class attr state_id represents a column of an integer, can’t be null and
 is a foreign key to states.id
 """
 from sqlalchemy import Column, Integer, String
-from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.sql.schema import ForeignKey
 from model_state import Base, State
-
-
-Base = declarative_base()
 
 
 class City(Base):
