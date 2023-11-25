@@ -15,6 +15,6 @@ Rectangle.prototype.print = function () {
     const printX = 'X'.repeat(this.width);
     console.log(printX);
   }
-}
+};
 
 module.exports = Rectangle;
