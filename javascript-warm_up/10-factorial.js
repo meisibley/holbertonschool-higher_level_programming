@@ -1,6 +1,6 @@
 #!/usr/bin/node
 const arg = parseInt(process.argv[2]);
-function factorial(ar) {
+function factorial (ar) {
   if (isNaN(ar) === true || ar === 1) {
     return (1);
   } else {
