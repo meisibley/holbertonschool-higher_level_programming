@@ -23,7 +23,7 @@ Rectangle.prototype.double = function () {
 };
 
 Rectangle.prototype.rotate = function () {
-  let swtch = this.width;
+  const swtch = this.width;
   this.width = this.height;
   this.height = swtch;
 };
